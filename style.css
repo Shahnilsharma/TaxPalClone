@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 2px solid; */
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+:root {
+    --color-text: rgb(51 65 85);
+    --color-blue: rgb(37 99 235);
+    --color-mainfoot: rgb(15 23 42);
+    --opacity-text: 0.7;
+    --font-size: 14px;
+} 
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.first {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+#feature {
+    display: flex;
+}
+#feature li a {
+    padding: 0 15px;
+    font-size: var(--font-size);
+    color: var(--color-text);
+    opacity: var(--opacity-text);
+}
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+#logo li {
+    padding: 0 10px;
+    font-size: var(--font-size);
+    font-weight: bolder;
+}
+#logo span {
+    color: blue;
+}
+header img {
+    width: 50px;
+}
+.signin ul {
+    display: flex;
+    align-items: center;
+}
+.signin {
+    width: 40%;
+}
+.signin a {
+    color: var(--color-text);
+    opacity: var(--opacity-text);
+}
+.signin li {
+    margin: 0;
+    font-size: var(--font-size);
+    padding: 0px 0px 0 108px;
+    width: 200px;
+}
+.signin #getstarted {
+    background-color: var(--color-blue);
+    padding: 17px 15px;
+    border-radius: 56px;
+    width: 167px;
+    height: 53px;
+    margin-right: 70px;
+}
+.signin #getstarted a {
+    color: white;
+    opacity: 100;
+    font-size: var(--font-size);
+    font-weight: bolder;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+#accounting {
+    font-weight: 500;
+    letter-spacing: -.025em;
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-top: 5%;
+}
+#accounting h2 {
+    text-align: center;
+}
+#accounting span {
+    color: var(--color-blue);
+    position: relative;
+}
+#bookeeping p {
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: -.025em;
+    font-weight: 400;
+    color: var(--color-text);
+    opacity: var(--opacity-text);
+    padding: 0px 0 0px 0;
+    margin: -23px 0 0 0;
+    width: 100%;
+}
+#buttons ul {
+    display: flex;
+}
+#buttons li {
+    padding: 0 10px;
+    border: 2px solid grey;
+    border-radius: 56px;
+    width: 200px;
+    height: 53px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 53px;
+}
+#buttons i {
+    padding-right: 15px;
+    color: var(--color-blue);
+    opacity: 10;
+}
+#buttons #first {
+    background-color: var(--color-mainfoot);
+}
+#buttons #first a {
+    color: white;
+    font-weight: bold;
+}
+#buttons #second a {
+    color: var(--color-text);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size);
+    opacity: var(--opacity-text);
+    color: var(--color-text);
+    margin-top: 5%;
+}
+footer .images {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+}
+.images img {
+    padding: 10px;
+    flex-basis: 32%;
+    max-width: 100px;
+    display: flex;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 1160px) {
+    .signin #getstarted {
+        padding: 17px 15px;
+        width: 177px;
+    }
+    .signin li {
+        margin: -5px;
+        padding: 0px 6px 0 76px;
+        width: 179px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .signin {
+        width: 53%;
+        margin: 0 0px 0 -55px;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size: 16px;
+    }
+    #bookeeping p {
+        font-size: 1rem;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .first, .signin {
+        width: 100%;
+        margin: 0;
+    }
+    .first {
+        flex-direction: column;
+        align-items: center;
+    }
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+    #feature li {
+        margin: 5px 0;
+    }
+    .signin ul {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .signin li {
+        padding: 0;
+        width: auto;
+        margin: 5px 0;
+    }
+    .signin #getstarted {
+        width: auto;
+        margin: 10px 0;
+    }
+    #menu {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #buttons ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #buttons li {
+        width: auto;
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    :root{
+        --font-size: 13px;
+    }
+   
+    #accounting {
+        font-size: 1.3rem;
+    }
+    #bookeeping p {
+        font-size: 0.875rem;
+    }
+    #buttons li {
+        padding: 0 10px;
+        font-size: 0.6rem;
+    }
+    footer {
+        width: 100%;
+        padding: 0 10px;
+    }
+    footer .images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .images img {
+        max-width: 80px;
+    }
+}
